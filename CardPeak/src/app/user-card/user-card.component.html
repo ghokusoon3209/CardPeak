@@ -1,3 +1,92 @@
-<p>
-  user-card works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center">
+      <button class="btn generate-button full-width"
+              [disabled]="loading"
+              (click)="getRandomUser()">
+        Next User
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="user-wrapper">
+        <div class="user-card full-width" [@flipState]="flip">
+          <!-- User Overview Side -->
+          <div class="user-card-side full-width user-overview">
+            <div class="name-header">
+              {{user.name.first + ' ' + user.name.last}}
+            </div>
+            <div class="user-picture">
+              <img class="picture" [src]="user.picture.large">
+            </div>
+            <div class="contact-footer full-width">
+              <button class="btn contact-button full-width"
+                      [ngClass]="btnHover ? hoverStyle() : buttonStyle()"
+                      (mouseover)="btnHover = true"
+                      (mouseout)="btnHover = false"
+                      [disabled]="loading"
+                      (click)="toggleFlip()">
+                Contact Me
+              </button>
+            </div>
+          </div>
+          <!-- Contact Details -->
+          <div class="user-card-side full-width user-contact">
+            <div class="name-header">
+              {{user.name.first + ' ' + user.name.last}}
+            </div>
+            <div class="user-info right">
+              <div class="row">
+                <div class="col-2">
+                  <i class="material-icons">
+                    home
+                  </i>
+                </div>
+                <div class="col-10">
+                  {{user.location.street}}, <br />
+                  {{user.location.city}}, <br />
+                  {{user.location.state}} <br />
+                </div>
+              </div>
+            </div>
+            <div class="user-info user-email">
+              <div class="row">
+                <div class="col-2">
+                  <i class="material-icons">
+                    mail
+                  </i>
+                </div>
+                <div class="col-10">
+                  <a [href]="emailString" class="email">{{user.email}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="user-info user-number">
+              <div class="row">
+                <div class="col-2">
+                  <i class="material-icons">
+                    phone
+                  </i>
+                </div>
+                <div class="col-10">
+                  {{user.cell}} <br />
+                  {{user.phone}}
+                </div>
+              </div>
+            </div>
+            <div class="contact-footer full-width">
+              <button class="btn contact-button full-width"
+                      [ngClass]="btnHover ? hoverStyle() : buttonStyle()"
+                      (mouseover)="btnHover = true"
+                      (mouseout)="btnHover = false"
+                      (click)="toggleFlip()">
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

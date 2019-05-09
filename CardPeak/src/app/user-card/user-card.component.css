@@ -1,0 +1,120 @@
+.user-wrapper {
+  perspective: 800px;
+  height: auto;
+  width: 20%;
+  margin: auto;
+}
+
+.user-card {
+  position: relative;
+  margin: 3rem auto;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+.user-card-side {
+  min-height: 30vw;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  line-height: 5vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  border-radius: 1em;
+}
+
+.user-overview {
+  background-image: linear-gradient(#e87087, #f6adbb);
+}
+
+.user-contact {
+  background-image: linear-gradient(#e87087, #f6adbb);
+  transform: rotateY(180deg);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.name-header {
+  background-image: linear-gradient(#fca6b1, #ffb7c0);
+  border-radius: 0.8em 0.8em 0 0;
+  text-transform: capitalize;
+  font-size: 1.5vw;
+  height: 5vw;
+}
+
+.picture-wrapper {
+  width: 60%;
+}
+
+.picture {
+  border-radius: 50%;
+  margin-top: 2em;
+  width: 60%;
+  border: 0.5em solid #fff;
+}
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.contact-button {
+  background-color: #e87087;
+  font-size: 1vw;
+  color: #fff;
+  width: auto;
+}
+
+.generate-button {
+  background-color: #e87087;
+  width: 20%;
+  color: #fff;
+  margin-top: 2em;
+  font-size: 1vw;
+}
+
+.button-hover {
+  background-color: #ffb7c0;
+  color: #e87087;
+  transition: color .25s ease-in-out, background-color .25s ease-in-out;
+}
+
+.user-info {
+  text-align: left;
+  font-size: 0.8vw;
+  margin: 2em;
+  padding: 0;
+  line-height: 1em;
+  text-transform: capitalize;
+}
+
+.user-email {
+  margin-top: 2.5em;
+  text-transform: none;
+}
+
+.email {
+  text-decoration: none;
+  color: #fff;
+}
+
+.phone-number {
+  margin-top: 2.5em;
+}
+
+button {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  outline: 0;
+  border: none;
+}
+
