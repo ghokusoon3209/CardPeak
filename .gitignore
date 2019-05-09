@@ -1,0 +1,14 @@
+/node_modules/bootstrap/*
+/node_modules/jquery/external/sizzle/dist/sizzle.min.map
+/node_modules/jquery/dist/jquery.slim.min.map
+/node_modules/jquery/dist/jquery.min.map
+/node_modules/jquery/src/.eslintrc.json
+/node_modules/jquery/package.json
+/node_modules/jquery/bower.json
+/.idea/workspace.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/node_modules/jquery/LICENSE.txt
+/node_modules/jquery/external/sizzle/LICENSE.txt
+/node_modules/jquery/AUTHORS.txt
+/node_modules/jquery
